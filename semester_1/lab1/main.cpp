@@ -1,0 +1,42 @@
+#include <iostream>
+#include <cmath>
+#include <clocale>
+#include <iomanip>
+using namespace std;
+// this lab1 with execrise 17
+int main(){
+  cout << setprecision(10);
+  setlocale(LC_ALL, ".65001");
+  cout << "Задание 1 с float" << "\n";
+  float a = 1000;
+  float b = 0.0001;
+  float chisl = pow(a-b,3) - (pow(a,3) + 3*pow(a,2)*b);
+  float znam = pow(b,3) - 3*pow(a,2)*b;
+  float res = chisl / znam;
+  cout << "числитель: " <<chisl << endl;
+  cout << "знаменатель: " << znam << endl;
+  cout << "результат: " << res << endl;
+  cout << "Задание 1 с double" << "\n";
+  double a_d = 1000;
+  double b_d = 0.0001;
+  double chisl_d = pow(a_d-b_d,3) - (pow(a_d,3) + 3*pow(a_d,2)*b_d);
+  double znam_d = pow(b_d,3) - 3*pow(a_d,2)*b_d;
+  double res_d = chisl_d / znam_d;
+  cout << "числитель: " <<chisl_d << endl;
+  cout << "знаменатель: " << znam_d << endl;
+  cout << "результат: " << res_d << endl;
+  cout << "Задание 2\n";
+  int n = 5;
+  int m = 5;
+  cout << "n = " << n << "\n" << "m = " << m << '\n';
+  int r1,r2,r3;
+  r1 = n---m; 
+  r2 = m-- <n; 
+  r3 = n++ >m;
+
+  cout << "n---m = " << r1 << "\n";
+  cout << "m--<n = " << r2 << "\n";
+  cout << "n++>m = " << r3 << "\n";
+  cout << "n = " << n << "\n" << "m = " << m << '\n';
+}
+
